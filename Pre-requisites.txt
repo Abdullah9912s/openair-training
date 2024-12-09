@@ -1,0 +1,13 @@
+Pre requesites:
+
+R software setup in windows:
+1. Download and Install the R software: https://cran.r-project.org/bin/windows/base/R-4.4.2-win.exe.
+2. The latest Rstudio executable for windows:  https://download1.rstudio.org/electron/windows/RStudio-2024.09.1-394.exe
+
+HYSPLIT software setup in windows:
+1. Download and Install Tcl/Tk in windows: https://www.ready.noaa.gov/data/web/models/hysplit4/trial/tcl.zip
+extract the tcl files at C:\Program Files\
+2. Install the latest registered version of Hysplot from here. https://www.ready.noaa.gov/HYSPLIT_hytrial.php  (https://www.ready.noaa.gov/data/web/models/hysplit4/trial/HYSPLIT_win64U_v5.3.0.exe)
+After installation, open this HYSPLIT application with C:\Program Files\tcl\tcl\bin\wish86t.exe.
+
+
