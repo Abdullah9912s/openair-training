@@ -1,0 +1,13 @@
+#!/usr/bin/R
+library("openair")
+setwd("E:/MUSIC/saudiEnvirozone/data")
+sat <- read.csv("E:/MUSIC/saudiEnvirozone/data/Al Amal_urban station.csv",header=TRUE,sep=",")
+sat$date <- as.POSIXct(strptime(sat$Date, format="%d/%m/%Y %H:%M", tz="GMT+0"))
+# names(sat)
+# sat <- subset(sat,select=c("date","ADA_08...08_CO.ppm"))
+# avgdata <- timeAverage(sat,avg.time="month",statistics="mean")
+# write.csv(avgdata,file="avgdata.csv",row.names=FALSE)
+
+png("plot.png",width = 8*300, height = 2*300, res=150)
+timePlot(sat, pollutant = "ADA_08...08_CO.ppm", avg.time = "day")
+dev.off()
