@@ -2,7 +2,7 @@
 library("openair")
 setwd("E:/MUSIC/saudiEnvirozone/data")
 sat <- read.csv("E:/MUSIC/saudiEnvirozone/data/Al Amal_urban station.csv",header=TRUE,sep=",")
-sat$date <- as.POSIXct(strptime(sat$Date, format="%d/%m/%Y %H:%M", tz="GMT+0"))
+sat$date <- as.POSIXct(strptime(sat$Dates, format="%d/%m/%Y %H:%M", tz="GMT+0"))
 # names(sat)
 # sat <- subset(sat,select=c("date","ADA_08...08_CO.ppm"))
 # avgdata <- timeAverage(sat,avg.time="month",statistics="mean")
