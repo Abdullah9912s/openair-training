@@ -51,7 +51,7 @@ row.names = FALSE, quote = FALSE, append = TRUE)
 x <- paste("echo tdump", year, month, day, hour, " >>CONTROL", sep = "")
 write.table(x, bat.file, col.names = FALSE,
 row.names = FALSE, quote = FALSE, append = TRUE)
-x <- "C:/hysplit/exec/hyts_std.exe"
+x <- paste0(hy.path, "/exec/hyts_std.exe")
 write.table(x, bat.file, col.names = FALSE,
 row.names = FALSE, quote = FALSE, append = TRUE)
 ## run the file
